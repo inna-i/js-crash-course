@@ -74,3 +74,8 @@ for(let i = 0; i < str.length; i++) {
 }
 
 console.log(charsArray);
+
+// Split string to array of chars using .split()
+const charsArray2 = str.split('');
+
+console.log(charsArray2);
