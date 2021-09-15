@@ -63,6 +63,14 @@ function calc(a, b, c, isSum) {
 }
 const result = calc(1, 3, '3', null);
 // const result = calc(1, 3);
-
 console.log('result ', result);
 
+// Possibility to go through string as an array using loops
+const str = "Hello, World!";
+const charsArray = [];
+
+for(let i = 0; i < str.length; i++) {
+    charsArray.push(str[i]);
+}
+
+console.log(charsArray);
