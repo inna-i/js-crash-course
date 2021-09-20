@@ -11,7 +11,7 @@ cars.forEach((item, index) => {
     CARS.push(`${item.toUpperCase()} 197${index}`);
 });
 
-// console.log(CARS);
+console.log(CARS);
 
 const movies = [
     {
