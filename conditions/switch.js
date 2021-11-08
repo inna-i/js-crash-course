@@ -24,4 +24,5 @@ switch (day) {
     }
 }
 
+
 console.log('Week day: ', weekDay);
