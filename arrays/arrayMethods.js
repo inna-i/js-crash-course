@@ -44,3 +44,4 @@ const str = 'test-error';
 
 console.log('Includes ', str.includes('cat'));
 console.log('Includes in array ', words.includes('Force'));
+
