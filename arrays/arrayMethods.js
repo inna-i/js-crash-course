@@ -7,11 +7,11 @@ const newNums = nums.map((arrayElement, index) => {
 });
 
 const movies = [{
-    name: 'LoTR',
-    genre: 'comics',
+    name: 'The Lord of the Rings',
+    genre: 'fantasy',
 }, {
     name: 'Star Wars',
-    genre: 'Sci-Fi'
+    genre: 'sci-fi'
 }, {
     name: 'Dark Knight',
     genre: 'comics',
@@ -44,4 +44,3 @@ const str = 'test-error';
 
 console.log('Includes ', str.includes('cat'));
 console.log('Includes in array ', words.includes('Force'));
-
