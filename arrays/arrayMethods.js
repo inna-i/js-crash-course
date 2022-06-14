@@ -44,3 +44,13 @@ const str = 'test-error';
 
 console.log('Includes ', str.includes('cat'));
 console.log('Includes in array ', words.includes('Force'));
+
+
+function getSum(nums) {
+    return nums.reduce((acc, n) => acc += n, 0);
+}
+
+console.log(getSum([10, 30, 10]));
+
+// 10 + '10' => 1010
+// 10 - '10' => 0

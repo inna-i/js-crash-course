@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch users</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .content {
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+        .user {
+            display: inline-block;
+            margin: 20px;
+        }
+        .user img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        h2 {
+            font-size: 16px;
+            color: #546E7A;
+            letter-spacing: 2px;
+        }
+        h1 {
+            margin: 30px 0 50px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <h1>GitHub users</h1>
+        <div id="users-list"></div>
+    </section>
+</body>
+<script src="./fetchUsers.js"></script>
+</html>
