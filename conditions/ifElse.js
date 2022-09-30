@@ -1,27 +1,16 @@
-const r = 100;
-let res;
+const comics = 'DC';
 
-if (r > 0) {
-    res = r * r * 3.14;
-}
+// if (comics === 'DC') {
+//     console.log('Batman');
+// } else if (comics === 'Marvel') {
+//     console.log('Iron Man');
+// } else {
+//     console.log('Please provide comics company');
+// }
 
-const product = 'Milk';
 
-if (product === 'Milk') {
-    console.log('It is Milk :) ');
+if (comics === 'DC') {
+    console.log('Batman');
 } else {
-    console.log('It is not a Milk :) ');
+    console.log('Iron Man');
 }
-
-const day = 2;
-let weekDay = '';
-
-if (day === 1) {
-    weekDay = 'Monday';
-} else if (day === 2) {
-    weekDay = 'Tuesday';
-} else {
-    weekDay = 'Wrong day number provided';
-}
-
-console.log()

@@ -1,26 +1,29 @@
 const MATH_PI = 3.14;
 const radius = 10;
 
-let result;
+const result = radius > 0 
+    ? MATH_PI * radius * radius
+    : 'Radius cannot be less than 1';
 
-result = radius !== 0
-    ? MATH_PI * (radius * radius)
-    : "Radius can not be equal to zero";
+// console.log(result)
 
-// console.log(result);
+const userName = 'Alex';
+const birthDay = 9;
 
-const userName = "Mark";
+const discount = userName === 'Mark' || birthDay === 9
+    ? '50%'
+    : '0%';
 
-const discount = userName === "Tony" ? '30%' : '0%';
+const msg = discount === '0%'
+    ? ''
+    : "Congrats! Your discount is " + discount;
 
-// console.log("Congrats! Your discount is " + discount);
+console.log(msg);
 
-const res = radius !== 0 && MATH_PI === 3.14
-    ? MATH_PI * (radius * radius)
-    : "Radius can not be equal to zero and Math PI should be correct";
 
-const checkRadius = radius === 10 || radius < 100 ? 'Ok' : 'Not Ok';
+// const res = radius !== 0 && MATH_PI === 3.14
+//     ? MATH_PI * (radius * radius)
+//     : "Radius can not be equal to zero and Math PI should be correct";
 
-console.log(checkRadius);
+// const checkRadius = radius === 10 || radius < 100 ? 'Ok' : 'Not Ok';
 
-console.log('logical operator ', !radius)
