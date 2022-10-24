@@ -5,13 +5,14 @@ const hasWord = sentence.includes(word); // true
 const hasCatWord = sentence.includes('cat'); // false
 
 
-console.log(`The word ${word} ${hasWord ? 'is' : 'is not'} in the sentence`);
+// console.log(`The word ${word} ${hasWord ? 'is' : 'is not'} in the sentence`);
 // output: 'The word "fox" is in the sentence'
 
 
 const beasts = 'Beasts list: ant, lison, camel, duck, bison';
 
 const beastsArray = beasts.split(' ');
+// console.log(beastsArray);
 // console.log(beastsArray.indexOf('b'));
 
 // console.log(beasts.indexOf('bison'));
@@ -36,24 +37,24 @@ const str = 'The quick brown fox jumps over the lazy dog.';
 // output: "lazy"
 
 const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
-const regex = /[a-z]/g;
+const regex = /[0-9]/g;
 const found = paragraph.match(regex);
 
 // console.log(found);
 // output: Array ["T", "I"]
 
-const p = 'The quick brown fox jumps over the lazy dog';
-const p1 = 'The quick brown dog jumps over the lazy dog';
+const strFox = 'The quick brown fox jumps over the lazy dog';
+const strDog = 'The quick brown dog jumps over the lazy dog';
 
-console.log(p.replace('dog', 'monkey'));
+console.log(strDog.replaceAll('dog', 'monkey'));
 // expected output: "The quick brown fox jumps over the lazy monkey."
 
 
-const dogRegex = /dog/g;
-console.log(p1.replace(dogRegex, 'ferret'));
+// const dogRegex = /dog/g;
+// console.log(strDog.replace(dogRegex, 'ferret'));
 // expected output: "The quick brown fox jumps over the lazy ferret."
 
-
+// destructor and template string
 const user = {
     userName: 'Tony',
     age: 110,
@@ -63,6 +64,6 @@ const user = {
 
 const { userName, age } = user;
 
-console.log(
-    `The user name is ${userName} and he is ${age} years old`
-);
+// console.log(
+//     `The user name is ${userName} and he is ${age} years old`
+// );
