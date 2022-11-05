@@ -1,0 +1,81 @@
+* {
+    font-family: sans-serif;
+}
+
+.content {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.user {
+    display: inline-block;
+    margin: 20px;
+}
+.user img {
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+h2 {
+    font-size: 16px;
+    color: #546E7A;
+    letter-spacing: 2px;
+}
+h1 {
+    margin: 30px 0 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+/* Popup styles */
+#popup-wrapper {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255 255 255 / 69%);
+    z-index: 100;
+}
+
+#popup {
+    position: relative;
+    padding: 30px;
+    width: 50vw;
+    min-width: 400px;
+    height: 400px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #dcdada;
+}
+
+#popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    font-size: 25px;
+    color: #8e8e8e;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#popup-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#popup-content img {
+    width: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#popup-content div {
+    padding: 0 30px;
+}

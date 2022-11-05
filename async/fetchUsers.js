@@ -11,12 +11,6 @@ async function getUsers() {
     }
 }
 
-function calcFactorial(n) {
-    n > 100
-
-
-}
-
 /* async operation - elements rendering */
 async function renderUsers() {
     let users = await getUsers();
@@ -38,7 +32,6 @@ async function renderUsers() {
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    calcFactorial();
     renderUsers();
 }, false);
 

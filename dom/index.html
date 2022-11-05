@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>My webpage</title>
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+  <body>
+
+    <p id="demo"></p>
+    <p class="topic"></p>
+    <p id="demo-result" class="result"></p>
+
+    <label for="feedback"> Feedback </label><br>
+    <textarea id="feedback" value="" rows="6" cols="30"></textarea>
+
+    <div id="removable">To be removed</div>
+
+   <script>
+
+    window.onload = e => {
+        console.log('window loaded');
+    }
+
+    const body = document.querySelector('body');
+    body.style.backgroundColor = '#232323';
+    body.style.color = '#fff';
+
+    const demoElement = document.getElementsByTagName('P')[0];
+    demoElement.innerHTML = 'Hello World!';
+    
+    const topicElement = document.getElementsByClassName('topic')[0];
+    topicElement.innerHTML = 'New topic for the next demo';
+
+    const resultElement = document.querySelector('#demo-result');
+    resultElement.innerHTML = 'The demo result';
+
+    document.getElementById('feedback').value = 'Add feedback...';
+
+    const div = document.createElement('div');
+    div.title = 'I am created element.';
+
+    const img = document.createElement('img');
+    img.src = 'https://static.vecteezy.com/system/resources/thumbnails/000/629/035/small/MADE_IN_UKRAINE.jpg';
+
+    div.append(img);
+    document.getElementById('demo').appendChild(div);
+    
+   </script>
+
+  </body>
+</html>
